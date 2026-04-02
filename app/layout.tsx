@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MuiThemeProvider from "./providers";
+import Providers from "@/src/components/Providers";
 
 export const metadata: Metadata = {
   title: "TenloListo - La plataforma #1 para creadores en Latinoamérica",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body>
-        <MuiThemeProvider>{children}</MuiThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
