@@ -3,9 +3,9 @@ import "./globals.css";
 import Providers from "@/src/components/Providers";
 
 export const metadata: Metadata = {
-  title: "TenloListo - La plataforma #1 para creadores en Latinoamérica",
-  description: "Conecta con miles de creadores y monetiza tu contenido con precios justos, pagos garantizados y total transparencia.",
-  keywords: "creadores, influencers, marketing, plataforma, latinoamérica",
+  title: "TenloListo - El programa de influencers para creadores cubanos",
+  description: "Conecta con marcas, monetiza tu contenido y recibe pagos garantizados. El primer programa de marketing de influencers diseñado para creadores en Cuba.",
+  keywords: "creadores cubanos, influencers cuba, marketing de influencers, creadores de contenido cuba, monetizar contenido, programa influencers cuba",
 };
 
 export default function RootLayout({

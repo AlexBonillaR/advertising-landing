@@ -1,36 +1,62 @@
 import { createTheme } from '@mui/material/styles';
 
+declare module '@mui/material/styles' {
+  interface Palette {
+    instagram: {
+      gradient: string;
+      pink: string;
+      purple: string;
+      orange: string;
+    };
+  }
+  interface PaletteOptions {
+    instagram?: {
+      gradient?: string;
+      pink?: string;
+      purple?: string;
+      orange?: string;
+    };
+  }
+}
+
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#7C3AED', // Purple
+      main: '#7C3AED',
       light: '#A78BFA',
       dark: '#5B21B6',
       contrastText: '#FFFFFF',
     },
     secondary: {
-      main: '#FCD34D', // Yellow/Gold
+      main: '#FCD34D',
       light: '#FDE68A',
       dark: '#FBBF24',
       contrastText: '#000000',
     },
     success: {
-      main: '#10B981', // Green (for checkmarks)
+      main: '#10B981',
       light: '#6EE7B7',
       dark: '#059669',
     },
     background: {
       default: '#FFFFFF',
-      paper: '#F8F7FF', // Light purple background
+      paper: '#F8F7FF',
     },
     text: {
-      primary: '#1F2937', // Dark gray
-      secondary: '#6B7280', // Medium gray
+      primary: '#1F2937',
+      secondary: '#6B7280',
     },
     divider: '#E5E7EB',
+    instagram: {
+      gradient: 'linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 75%, #515BD4 100%)',
+      pink: '#DD2A7B',
+      purple: '#8134AF',
+      orange: '#F58529',
+    },
   },
   typography: {
     fontFamily: [
+      'Inter',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
